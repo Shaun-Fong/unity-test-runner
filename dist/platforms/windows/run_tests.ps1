@@ -49,9 +49,10 @@ if ($null -ne $PRIVATE_REGISTRY_TOKEN)
   Write-Output "Private registry token detected, creating .upmconfig.toml and .npmrc"
 
   $UPM_CONFIG_TOML_PATH="$env:USERPROFILE\.upmconfig.toml"
-  $NPMRC_PATH="$env:USERPROFILE\.npmrc"
   Write-Output "Creating toml at path: $UPM_CONFIG_TOML_PATH"
-  Write-Output "Creating npmrc at path: $NPMRC_PATH"
+  
+#  $NPMRC_PATH="$env:USERPROFILE\.npmrc"
+#  Write-Output "Creating npmrc at path: $NPMRC_PATH"
 
 @"
 [npmAuth."$SCOPED_REGISTRY_URL"]
