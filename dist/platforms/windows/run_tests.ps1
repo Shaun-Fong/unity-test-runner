@@ -39,7 +39,7 @@ Write-Output "Using Unity version ${env:UNITY_VERSION} to test."
 # Setup token for private package registry.
 #
 
-if ($null -ne $PRIVATE_REGISTRY_TOKEN)
+if ($null -ne ${env:PRIVATE_REGISTRY_TOKEN})
 {
   Write-Output ""
   Write-Output "###########################"
@@ -50,13 +50,13 @@ if ($null -ne $PRIVATE_REGISTRY_TOKEN)
 
   $UPM_CONFIG_TOML_PATH="$env:USERPROFILE\.upmconfig.toml"
   Write-Output "Creating toml at path: $UPM_CONFIG_TOML_PATH"
-  
+
 #  $NPMRC_PATH="$env:USERPROFILE\.npmrc"
 #  Write-Output "Creating npmrc at path: $NPMRC_PATH"
 
 @"
 [npmAuth."$SCOPED_REGISTRY_URL"]
-token = "$PRIVATE_REGISTRY_TOKEN"
+token = "${env:PRIVATE_REGISTRY_TOKEN}"
 alwaysAuth = true
 "@ | Set-Content -Path "$env:USERPROFILE\.upmconfig.toml"
 }
