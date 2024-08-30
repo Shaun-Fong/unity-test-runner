@@ -87,9 +87,7 @@ jobs:
         projectPath:
           - unity-project-with-correct-tests
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -145,9 +143,7 @@ jobs:
           - ubuntu-latest
           - windows-2022
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
         projectPath:
           - unity-project-with-correct-tests
         runAsHostUser:
@@ -210,9 +206,7 @@ jobs:
         projectPath:
           - unity-project-with-correct-tests
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -269,9 +263,7 @@ jobs:
         projectPath:
           - unity-project-with-correct-tests
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -320,9 +312,7 @@ jobs:
         projectPath:
           - unity-project-with-correct-tests
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -377,9 +367,7 @@ jobs:
           - ubuntu-latest
           - windows-2022
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
         projectPath:
           - unity-project-with-correct-tests
     steps:
@@ -444,9 +432,7 @@ jobs:
         projectPath:
           - unity-package-with-correct-tests/com.example.testpackage
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
         testMode:
           - playmode
           - editmode
@@ -485,9 +471,7 @@ jobs:
         projectPath:
           - unity-package-with-correct-tests/com.example.testpackage
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -531,9 +515,7 @@ jobs:
       fail-fast: false
       matrix:
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
         projectPath:
           - unity-package-with-correct-tests/com.example.testpackage
     steps:
@@ -581,9 +563,7 @@ jobs:
         projectPath:
           - unity-package-with-correct-tests/com.example.testpackage
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -627,9 +607,7 @@ jobs:
       fail-fast: false
       matrix:
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
         projectPath:
           - unity-package-with-correct-tests/com.example.testpackage
     steps:
@@ -677,9 +655,7 @@ jobs:
         projectPath:
           - unity-package-with-correct-tests/com.dependencyexample.testpackage
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
@@ -727,9 +703,7 @@ jobs:
         projectPath:
           - unity-package-with-correct-tests/com.dependencyexample.testpackage
         unityVersion:
-          - 2022.3.13f1
-          - 2023.1.19f1
-          - 2023.2.2f1
+          - 2022.3.27f1
     steps:
       ###########################
       #         Checkout        #
