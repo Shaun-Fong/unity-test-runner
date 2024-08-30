@@ -34,6 +34,32 @@ Write-Output "Using custom parameters ${env:CUSTOM_PARAMETERS}"
 
 Write-Output "Using Unity version ${env:UNITY_VERSION} to test."
 
+
+#
+# Setup token for private package registry.
+#
+
+if ($null -ne ${env:PRIVATE_REGISTRY_TOKEN})
+{
+  Write-Output ""
+  Write-Output "###########################"
+  Write-Output "#    Private Registry     #"
+  Write-Output "###########################"
+  Write-Output ""
+  Write-Output "Private registry token detected, creating .upmconfig.toml and .npmrc"
+
+  $UPM_CONFIG_TOML_PATH="$env:USERPROFILE\.upmconfig.toml"
+  $NPMRC_PATH="$env:USERPROFILE\.npmrc"
+  Write-Output "Creating toml at path: $UPM_CONFIG_TOML_PATH"
+  Write-Output "Creating npmrc at path: $NPMRC_PATH"
+
+  @"
+  [npmAuth."$SCOPED_REGISTRY_URL"]
+  token = "$PRIVATE_REGISTRY_TOKEN"
+  alwaysAuth = true
+  "@ | Set-Content -Path "$env:USERPROFILE\.upmconfig.toml"
+}
+
 #
 # Overall info
 #
