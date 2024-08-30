@@ -39,7 +39,7 @@ Write-Output "Using Unity version ${env:UNITY_VERSION} to test."
 # Setup token for private package registry.
 #
 
-if ($null -ne ${env:PRIVATE_REGISTRY_TOKEN})
+if ($null -ne $PRIVATE_REGISTRY_TOKEN)
 {
   Write-Output ""
   Write-Output "###########################"
