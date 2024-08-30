@@ -53,11 +53,11 @@ if ($null -ne ${env:PRIVATE_REGISTRY_TOKEN})
   Write-Output "Creating toml at path: $UPM_CONFIG_TOML_PATH"
   Write-Output "Creating npmrc at path: $NPMRC_PATH"
 
-  @"
-  [npmAuth."$SCOPED_REGISTRY_URL"]
-  token = "$PRIVATE_REGISTRY_TOKEN"
-  alwaysAuth = true
-  "@ | Set-Content -Path "$env:USERPROFILE\.upmconfig.toml"
+@"
+[npmAuth."$SCOPED_REGISTRY_URL"]
+token = "$PRIVATE_REGISTRY_TOKEN"
+alwaysAuth = true
+"@ | Set-Content -Path "$env:USERPROFILE\.upmconfig.toml"
 }
 
 #
