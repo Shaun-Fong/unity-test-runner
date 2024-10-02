@@ -125,7 +125,7 @@ class Input {
     const dockerIsolationMode = getInput('dockerIsolationMode') || 'default';
 
     const runAsHostUser = getInput('runAsHostUser') || 'false';
-    const containerRegistryRepository = getInput('containerRegistryRepository') || 'unityci/editor';
+    const containerRegistryRepository = getInput('containerRegistryRepository') || 'shaunfong/editor';
     const containerRegistryImageVersion = getInput('containerRegistryImageVersion') || '3';
 
     // Validate input

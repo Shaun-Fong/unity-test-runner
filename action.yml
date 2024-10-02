@@ -92,7 +92,7 @@ inputs:
     description: 'Url to a unity license server for acquiring floating licenses.'
   containerRegistryRepository:
     required: false
-    default: 'unityci/editor'
+    default: 'shaunfong/editor'
     description: 'Container registry and repository to pull image from. Only applicable if customImage is not set.'
   containerRegistryImageVersion:
     required: false

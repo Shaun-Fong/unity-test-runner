@@ -5,12 +5,12 @@ describe('ImageTag', () => {
     editorVersion: '2099.9.9f9',
     targetPlatform: 'Test',
     builderPlatform: '',
-    containerRegistryRepository: 'unityci/editor',
+    containerRegistryRepository: 'shaunfong/editor',
     containerRegistryImageVersion: '3',
   };
 
   const defaults = {
-    image: 'unityci/editor',
+    image: 'shaunfong/editor',
   };
 
   describe('constructor', () => {
@@ -22,7 +22,7 @@ describe('ImageTag', () => {
     it('accepts parameters and sets the right properties', () => {
       const image = new ImageTag(some);
 
-      expect(image.repository).toStrictEqual('unityci/editor');
+      expect(image.repository).toStrictEqual('shaunfong/editor');
       expect(image.editorVersion).toStrictEqual(some.editorVersion);
       expect(image.targetPlatform).toStrictEqual(some.targetPlatform);
       expect(image.targetPlatformSuffix).toStrictEqual(some.builderPlatform);
@@ -48,7 +48,7 @@ describe('ImageTag', () => {
       const image = new ImageTag({
         editorVersion: '2099.1.1111f1',
         targetPlatform: some.targetPlatform,
-        containerRegistryRepository: 'unityci/editor',
+        containerRegistryRepository: 'shaunfong/editor',
         containerRegistryImageVersion: '3',
       });
 
@@ -66,7 +66,7 @@ describe('ImageTag', () => {
         editorVersion: '2099.1.1111f1',
         targetPlatform: some.targetPlatform,
         customImage: `${defaults.image}:2099.1.1111@347598437689743986`,
-        containerRegistryRepository: 'unityci/editor',
+        containerRegistryRepository: 'shaunfong/editor',
         containerRegistryImageVersion: '3',
       });
 
@@ -77,7 +77,7 @@ describe('ImageTag', () => {
       const image = new ImageTag({
         editorVersion: '2022.3.7f1',
         targetPlatform: 'WebGL',
-        containerRegistryRepository: 'unityci/editor',
+        containerRegistryRepository: 'shaunfong/editor',
         containerRegistryImageVersion: '3',
       });
 
@@ -95,7 +95,7 @@ describe('ImageTag', () => {
       const image = new ImageTag({
         editorVersion: '2019.2.11f1',
         targetPlatform: 'NoTarget',
-        containerRegistryRepository: 'unityci/editor',
+        containerRegistryRepository: 'shaunfong/editor',
         containerRegistryImageVersion: '3',
       });
 

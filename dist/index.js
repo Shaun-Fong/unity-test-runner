@@ -687,7 +687,7 @@ class Input {
             `${Math.floor((os_1.default.totalmem() / bytesInMegabyte) * memoryMultiplier)}m`;
         const dockerIsolationMode = (0, core_1.getInput)('dockerIsolationMode') || 'default';
         const runAsHostUser = (0, core_1.getInput)('runAsHostUser') || 'false';
-        const containerRegistryRepository = (0, core_1.getInput)('containerRegistryRepository') || 'unityci/editor';
+        const containerRegistryRepository = (0, core_1.getInput)('containerRegistryRepository') || 'shaunfong/editor';
         const containerRegistryImageVersion = (0, core_1.getInput)('containerRegistryImageVersion') || '3';
         // Validate input
         if (!this.testModes.includes(testMode)) {
